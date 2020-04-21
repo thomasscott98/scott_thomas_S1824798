@@ -1,0 +1,7 @@
+<!-- Thomas Scott S1824798 -->
+<!-- Useful information and open close for the menu -->
+<resources>
+    <string name="app_name">tscott202MPD_CW</string>
+    <string name="open">open</string>
+    <string name="close">close</string>
+</resources>

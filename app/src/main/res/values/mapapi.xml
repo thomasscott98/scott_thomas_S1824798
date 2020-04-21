@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Thomas Scott S1824798 -->
+<!-- The API Key for Google Maps for Android -->
+<resources>
+    <string name="map_key" translatable="false">
+        AIzaSyC8_6_a54CVA7QxpJsG1HgajpINrVffCog
+    </string>
+</resources>

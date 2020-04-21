@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Thomas Scott - S1824798 -->
+<!-- Horizontal version which increases the spacing between elements and reduces text size-->
+<!-- Was trying to align labels and inputs horizontally but could not get it to work-->
+<!-- Perhaps a relative layout would have been better in retrospect. -->
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/JourneyPlannerHeading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Journey Planner"
+        android:textAppearance="@style/Widget.AppCompat.Spinner.Underlined"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/StartPostcodeLabel"
+        android:layout_width="186dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Enter Start Postcode"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/JourneyPlannerHeading" />
+
+    <EditText
+        android:id="@+id/StartPostcodeEntry"
+        android:layout_marginTop="10dp"
+        android:layout_width="368dp"
+        android:layout_height="48dp"
+        android:visibility="visible"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/StartPostcodeLabel"/>
+
+    <TextView
+        android:id="@+id/EndPostcodeLabel"
+        android:layout_width="186dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Enter End Postcode"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/StartPostcodeEntry" />
+
+    <EditText
+        android:id="@+id/EndPostcodeEntry"
+        android:layout_marginTop="10dp"
+        android:layout_width="368dp"
+        android:layout_height="48dp"
+        android:visibility="visible"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/EndPostcodeLabel"/>
+
+    <Button
+        android:id="@+id/getJourneyPlanBtn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="#00ff00"
+        android:text="View Incidents"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/EndPostcodeEntry" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
